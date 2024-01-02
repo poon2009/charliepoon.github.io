@@ -46,9 +46,29 @@
       log file in the same embedded computer(Linux) and forward those real time records’ data(e.g Transaction records, machine status) 
       to a new backend server platform(AWS cloud). 
     </p>
-    <img src="pic/ProfilePhoto.png" style="width:30%"/>
+    <p>
+      Infrastructure Diagram:
+    </p>
+    <img src="pic/Infra-3rdparty-proj.png" style="width:85%"/>
+    <p>
+      Backend Admin Webpages:
+    </p>
+    <img id="webpage-demo" src="pic/3rdparty-webdemo-1.png" style="width:60%"/>
   </div>
 </div>
+
+<script>
+  (function() { // function expression closure to contain variables
+    var i = 0;
+    var pics = ["pic/3rdparty-webdemo-2.png", "pic/3rdparty-webdemo-3.png", "pic/3rdparty-webdemo-1.png"];
+    var el = document.getElementById('webpage-demo'); // el doesn't change
+    function toggle() {
+      el.src = pics[i]; // set the image
+      i = (i + 1) % pics.length; // update the counter
+    }
+    setInterval(toggle, 2000);
+  })();
+</script>
 
 </body>
 </html>
