@@ -1,1 +1,94 @@
-Hello!! This is Charlie Poon Profile Github homepage
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Charlie Poon's profile</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="header">
+  <h1>Charlie Poon Chun Sing</h1>
+  <p>Interested in IoT and Embedded System Development</p>
+</div>
+
+<!-- <div class="navbar">
+  
+</div> -->
+
+<div class="navbar">
+  <a href="index.html">Home</a>
+  <div class="dropdown">
+    <button class="dropbtn">Projects
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="proj_aws.html"><strong>&#128168</strong>Migration to AWS cloud server</a>
+      <a href="proj_mcu.html"><strong>&#128223</strong>Multi-purposes MCU board</a>
+      <a href="proj_app.html"><strong>&#128190</strong>Simple Android APP for files collection</a>
+      <a href="proj_rev.html"><strong>&#9981</strong>VM Protocol Reverse Engineering</a>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="side">
+    <h2>About Me</h2>
+    <div><img id="img_to_flip" src="pic/ProfilePhoto.png" style="width:50%"/></div>
+
+    <!-- <div><img id=img_to_flip src="pic/ProfilePhoto.png" style="width:380px;height:450px;"/></div> -->
+    <!-- <div><img id=img_to_flip src="pic/ProfilePhoto2.JPG" style="width:330px;height:400px;"/></div> -->
+    
+    <p>Charlie Poon Chun Sing. I am from Hong Kong.&#128512</p>
+    <p>I have more than 5 years experience in IoT and embedded system development.</p>
+    <p>Major projects like based on STM32 or Arduino to develop embedded firmware, which is mainly using C/C++ language for bare-metal or RTOS programming.</p>
+    <p>Solid hardware development experience in using KiCAD/Altium Designer for schematic design and PCB layout. Plus, SMT Process, BOM list preparation & mass production arrangement.</p>
+    <p>For the server side development, I have experience in using AWS cloud's components, MySQL/SQLite database and network protocols communication like HTTP(Get,Post, ...) API, MQTT.
+    <p>Mainly using programming language Python for high-end software development. JavaScript with Node.js(Express.js) for full-stack software development.</p>
+  </div>
+  <div>
+    <div class="main">
+      <h2>Technical Skills</h2>
+      <p><font size="4"><strong>Programming languages:</strong> C/C++, Python, JavaScript, Kotlin(Beginner&#128304)&#128531, Bash Script</font></p>
+      <p><font size="4"><strong>Code Editor:</strong> VScode, vim</font></p>
+      <p><font size="4"><strong>MCU’s series:</strong>STM32, GD32, Arduino </font></p>
+      <p><font size="4"><strong>MCU’s initialization code generators:</strong> Platform IO, stm32CubeMX with Makefile</font></p>
+      <p><font size="4"><strong>MCU’s RTOS platform:</strong> FreeRTOS</font></p>
+      <p><font size="4"><strong>PCB EDA:</strong>KiCad, Altium Designer </font></p>
+      <p><font size="4"><strong>Front End:</strong>HTML(Template view engine pug), CSS, jQuery(Beginner)</font></p>
+      <p><font size="4"><strong>Back End:</strong>Node.js (with web application framework Express.js) </font></p>
+      <p><font size="4"><strong>Database:</strong>MySQL, SQLite (Basic operations for CRUD with database) </font></p>
+      <p><font size="4"><strong>IoT Protocol:</strong>HTTP(Get/Post/...) API , MQTT </font></p>
+      <p><font size="4"><strong>Cloud Platform:</strong>AWS (Experienced in using components: EC2 instance and S3 bucket) </font></p>
+      <p><font size="4"><strong>Hardware dev. tools & skills:</strong>Logic analyzer, JLink Debugger, Hand soldering(e.g SMD/SMT & through-hole components), Oscilloscope, Digital multimeter </font></p>
+      <p>--------------------------------------------------------------------------------------------------------------------------------------------------------------</p>
+      <h2>Education</h2>
+      <h3>Hong Kong University of Science and Technology (HKUST),   2011 - 2016</h3>
+      <p>Bachelor of Engineering (Honors) in Electronic Engineering</p>
+      <h3>Hong Kong Institute of Vocational Education (IVE),   2008 - 2011</h3>
+      <p>Higher Diploma in Electronic and Communication Engineering</p>
+    </div>
+  </div>
+</div>
+
+<!-- <script>
+  (function() { // function expression closure to contain variables
+    var i = 0;
+    var pics = ["pic/ProfilePhoto.png", "pic/ProfilePhoto2.JPG"];
+    var el = document.getElementById('img_to_flip'); // el doesn't change
+    function toggle() {
+      el.src = pics[i]; // set the image
+      if(pics[i] == "pic/ProfilePhoto.png") {
+        el.style="width:50%"
+      }else {
+        el.style="width:38%"
+      }
+      i = (i + 1) % pics.length; // update the counter
+    }
+    setInterval(toggle, 2000);
+  })();
+</script> -->
+
+</body>
+</html>
